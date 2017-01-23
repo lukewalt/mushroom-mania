@@ -2,3 +2,22 @@ body {
     background-color: #6dffa7;
     text-align: center;
 }
+
+h1 {
+  font-family: 'Monoton', cursive;
+  font-size: 4em;
+}
+
+h5 {
+  font-family: 'Monoton', cursive;
+
+}
+
+form {
+  font-family: 'Quicksand', sans-serif;
+
+}
+
+p {
+  font-family: 'Quicksand', sans-serif;
+}

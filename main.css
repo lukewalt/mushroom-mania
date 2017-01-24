@@ -8,7 +8,7 @@ h1 {
   font-size: 4em;
 }
 
-h5 {
+h4 {
   font-family: 'Monoton', cursive;
 
 }
@@ -20,4 +20,17 @@ form {
 
 p {
   font-family: 'Quicksand', sans-serif;
+}
+
+.userInput {
+  width: 60%;
+  height: 25px;
+  margin: 2%;
+}
+
+.card {
+  border: 1px solid black;
+  width: 60%;
+  margin: 2% auto;
+  border-radius: 5px;
 }

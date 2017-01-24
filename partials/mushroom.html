@@ -1,15 +1,18 @@
 <h1>Mushroom Mania</h1>
 
 <form>
-  <input type="text" name="userInput" value="filter" ng-model="mushroomTypes"> <br>
-  <input type="radio" name="toggle" value="poisonous">Poisonous
-  <input type="radio" name="toggle" value="non-poisonous">Non-poisonous<br>
+  <input type="text" name="userInput" value="filter" ng-model="mushFilt" class="userInput"> <br>
+  <!--  -->
+  <input type="radio" name="toggle" value="" ng-model="isPoison" class="radio">All
+  <input type="radio" name="toggle" value="true" ng-model="isPoison" class="radio">Poisonous
+  <input type="radio" name="toggle" value="false" ng-model="isPoison" class="radio">Non-poisonous<br>
+
 </form>
 
-<div ng-repeat="item in info | filter:mushroomTypes" class="">
-    <div ng-repeat="(k, v) in item">
-      <h5>{{k}}</h5>
-      <p>Poison : {{v.edible}} </p>
+<div ng-repeat="item in info | filter:mushFilt | filter:isPoison"  class="card">
+    <div ng-repeat="(k, v) in item" >
+      <h4>{{k}}</h4>
+      <p>Edible : {{v.edible}}</p>
       <p>Description : {{v.description}}</p>
     </div>
 </div>
